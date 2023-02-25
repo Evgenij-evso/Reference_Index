@@ -2,6 +2,14 @@ let ButtonGl1 = document.querySelector('.StyleReferenceButtonNum1')
 let DisplayNone1 = document.querySelector('.divDisplayNone1')
 const media1068 = window.matchMedia('(max-width: 1068px)')
 const media761 = window.matchMedia('(max-width: 761px)')
+const media400 = window.matchMedia('(max-width: 400px)')
+
+setInterval(function(){
+    if (media400.matches) {
+        startHeight = '80px'
+    }
+},100)
+
 let startHeight = '100px'
 
 let ft = false
@@ -91,7 +99,29 @@ let DisplayNone3 = document.querySelector('.divDisplayNone3')
 let ft3 = false
 ButtonGl3.addEventListener('click',function(){
     console.log('Func Start')
-    if (ft3 == false && media761.matches) {
+    if (ft3 == false && media400.matches) {
+        anime({
+            targets: '.StyleReferenceDivGlNum3',
+            height: '1000px',
+            duration: 300,
+            easing: 'easeOutQuad'
+        })
+        ButtonGl3.innerHTML = '-'
+
+        ft3 = true
+    }
+    else if (ft3 == true && media400.matches) {
+        anime({
+            targets: '.StyleReferenceDivGlNum3',
+            height: startHeight,
+            duration: 300,
+            easing: 'easeOutQuad'
+        })
+        ButtonGl3.innerHTML = '+'
+
+        ft3 = false
+    }
+    else if (ft3 == false && media761.matches) {
         anime({
             targets: '.StyleReferenceDivGlNum3',
             height: '1150px',
