@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    font-family: monospace, monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+    z-index: -1;
+
+}
+.menu__item{
+    font-size: 16px;
+}
+
+.backgroundDiv{
+    min-height: 100%;
+    color: #374c57;
+    font-family: Roboto, system-ui, -apple-system, Segoe UI, Ubuntu, Cantarell, Noto Sans, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: normal;
+    overflow-x:hidden;
+    z-index: -1;
+
+    background: repeating-linear-gradient(180deg, #fff, #6d99d1 3500px, #6d99d1 0, #f8f8f8 5150px, #f8f8f8 0, #f8f8f8 5550px, #f8f8f8 0, #6d99d1)
+}
+
+.divCenterGl{
+    width: 1200px;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+.RandomDiv{
+    width: 100%;
+    background-image:url(./img/banner-bg-x3.png);
+    background-size: 80%;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+.backgroundHouse{
+    width: 100%;
+    background-image:url(./img/banner-spoor.png);
+    background-size: 60%;
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+}
+.GlMenuReference{
+    z-index: 1000;
+    margin-top: 200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1rem solid;
+    border-color: rgba(143, 143, 143, 0);
+    background-color: rgba(143, 143, 143, 0);
+    border-radius: 20px;
+    display: table;
+    justify-content: center;
+}
+.StyleReferenceDivGl{
+    width: 90%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.473);
+    display: flex;
+    overflow: hidden;
+}
+
+.StyleReferenceH1{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    margin-left: 20px;
+}
+.StyleReferenceButton{
+    width: 100px;
+    height: 100%;
+    margin-right: 0;
+    margin-left: auto;
+    font-size: 30px;
+    background-color: rgb(255, 251, 0);
+    border-radius: 10px;
+}
+
+.GeneralReference{
+    margin-top: 80px;
+}
+.H1FileReference{
+    color: #374c57;
+    font-size: 60px;
+    width: auto;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.divDisplayNone{
+    width: auto;
+    height: auto;
+    
+}
+.a{
+    color: #7a99aa !important;
+}
+.PGl{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.ContainerText{
+    width: auto;
+    height: 100%;
+}
+.mediumTextRef{
+    font-size: 25px;
+}
+footer{
+    flex: 0 0 auto !important;
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    display: none !important;
+}
+.banner__img{
+    z-index: 200;
+}
+
+@media (min-width:1068px) {
+
+}
+
+@media (max-width:850px) {
+    .RandomDiv{
+        background-image: none;
+    }
+  }
+@media (max-width:767px) {
+    .divCenterGl{
+        width: 1200px;
+        height: 100vh;
+    
+        display: table;
+        justify-content: center;
+    }
+    .banner__img{
+        display: none;
+    }
+    header{
+        height: 100px;
+    }
+    .button_hamburger{
+        display: none;
+    }
+  }
+
