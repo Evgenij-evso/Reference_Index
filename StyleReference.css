@@ -169,4 +169,53 @@ footer{
         display: none;
     }
   }
+@media (max-width:400px) {
+    .mediumTextRef{
+        font-size: 5px;
+    }
+    .StyleReferenceH1{
+        font-size: 13px !important;
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 100px;
+        margin-left: 20px;
+    }
+    .ContainerText{
+        width: 200px;
+        height: 100%;
+    }
+    .StyleReferenceButton{
+        width: 50px;
+        height: 100%;
+        margin-right: 0;
+        margin-left: auto;
+        font-size: 20px;
+        background-color: rgb(255, 251, 0);
+        border-radius: 10px;
+    }
+    .GlMenuReference{
+        z-index: 1000;
+        margin-top: 100px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1rem solid;
+        border-color: rgba(143, 143, 143, 0);
+        background-color: rgba(143, 143, 143, 0);
+        border-radius: 20px;
+        display: table;
+        justify-content: center;
+    }
+    .PGl{
+        font-size: 11px;
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+    header{
+        height: 100px;
+    }
+  }
+
 

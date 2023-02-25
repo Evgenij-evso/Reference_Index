@@ -1,6 +1,9 @@
 let ButtonGl1 = document.querySelector('.StyleReferenceButtonNum1')
 let DisplayNone1 = document.querySelector('.divDisplayNone1')
 const media1068 = window.matchMedia('(max-width: 1068px)')
+const media761 = window.matchMedia('(max-width: 761px)')
+let startHeight = '100px'
+
 let ft = false
 
 
@@ -21,7 +24,7 @@ ButtonGl1.addEventListener('click',function(){
     else if (ft == true && media1068.matches) {
         anime({
             targets: '.StyleReferenceDivGlNum1',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -43,7 +46,7 @@ ButtonGl1.addEventListener('click',function(){
     else if(ft == true){
         anime({
             targets: '.StyleReferenceDivGlNum1',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -72,7 +75,7 @@ ButtonGl2.addEventListener('click',function(){
     else if(ft2 == true){
         anime({
             targets: '.StyleReferenceDivGlNum2',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -85,7 +88,6 @@ ButtonGl2.addEventListener('click',function(){
 
 let ButtonGl3 = document.querySelector('.StyleReferenceButtonNum3')
 let DisplayNone3 = document.querySelector('.divDisplayNone3')
-const media761 = window.matchMedia('(max-width: 761px)')
 let ft3 = false
 ButtonGl3.addEventListener('click',function(){
     console.log('Func Start')
@@ -103,7 +105,7 @@ ButtonGl3.addEventListener('click',function(){
     else if (ft3 == true && media761.matches) {
         anime({
             targets: '.StyleReferenceDivGlNum3',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -125,7 +127,7 @@ ButtonGl3.addEventListener('click',function(){
     else if(ft3 == true){
         anime({
             targets: '.StyleReferenceDivGlNum3',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -155,7 +157,7 @@ ButtonGl4.addEventListener('click',function(){
     else if(ft4 == true){
         anime({
             targets: '.StyleReferenceDivGlNum4',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -185,7 +187,7 @@ ButtonGl5.addEventListener('click',function(){
     else if(ft5 == true){
         anime({
             targets: '.StyleReferenceDivGlNum5',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -215,7 +217,7 @@ ButtonGl6.addEventListener('click',function(){
     else if(ft6 == true){
         anime({
             targets: '.StyleReferenceDivGlNum6',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -245,7 +247,7 @@ ButtonGl7.addEventListener('click',function(){
     else if(ft7 == true){
         anime({
             targets: '.StyleReferenceDivGlNum7',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -275,7 +277,7 @@ ButtonGl8.addEventListener('click',function(){
     else if(ft8 == true){
         anime({
             targets: '.StyleReferenceDivGlNum8',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -304,7 +306,7 @@ ButtonGl9.addEventListener('click',function(){
     else if(ft9 == true){
         anime({
             targets: '.StyleReferenceDivGlNum9',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
@@ -334,7 +336,7 @@ ButtonGl10.addEventListener('click',function(){
     else if(ft10 == true){
         anime({
             targets: '.StyleReferenceDivGlNum10',
-            height: '100px',
+            height: startHeight,
             duration: 300,
             easing: 'easeOutQuad'
         })
